@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+
+:root {
+    --main-bg-color: black;
+    --second-bg-color: white;
+
+    --main-font-color: white;
+    --secondar-font-color: black;
+
+    --red-accent-color: RGBA(171, 32, 38, 1.00);
+    --gold-accent-color: RGBA(189, 172, 116, 1.00);
+
+    --main--font: 'Roboto';
+  }
+
 /*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -28,9 +44,9 @@ html {
     box-sizing: inherit;
 }
 
-body * + * {
+/* body * + * {
     margin-top:1.5em;
-}
+} */
 /* End Brandon Added */
 
 
@@ -114,9 +130,125 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+  html {
+    font-size: 16px;
+  }
+  @media screen and (min-width: 320px) {
+    html {
+      font-size: calc(16px + 6 * ((100vw - 320px) / 680));
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    html {
+      font-size: 22px;
+    }
+  }
+
+body {
+    font-family: sans-serif;
+    font-family: var(--main--font);
+}
+
+img {
+    width: 100%;
+}
+
+.hero-nav {
+
+    background-color: var(--main-bg-color);
+    text-align: right;
+}
+
+.hero-nav a {
+    color: var(--main-font-color);
+    text-decoration: none;
+    margin-left: 20px;
+    
+}
 
 
+.nav-box {
+    max-width: 900px;
+    margin: 0 auto;
+}
 
+.hero {
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+}
+
+.hero-box {
+    padding-top: 30px;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.hero-box p {
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 1em auto;
+}
+
+.gradient {
+    height: 300px;
+    background-image:
+    linear-gradient(
+      black 10%, gray 40%, var(--second-bg-color) 100%
+    );
+}
+
+.projects {
+    height: 100vh;
+    background-color: var(--second-bg-color);
+    max-width: 80vw;
+    margin: 0 auto;
+
+    
+}
+
+.projects-box {
+    padding: 2em;
+    transform: translateY(-300px);
+    background-color: var(--second-bg-color);
+    overflow: hidden;
+    height: 80vh;
+    box-shadow: 0px -50px 300px -20px var(--red-accent-color);
+}
+
+.projects-heading {
+    color: var(--red-accent-color);
+    display: inline;
+    font-size: 1.6em;
+    font-weight: 900;
+    padding-right: 2em;
+}
+
+/* h2 {
+    text-align: ;  
+    position: relative;  
+    font-size: 80px;  
+    z-index: 1;  
+}
+h2::after {
+    content: '';  
+    background-color: var(--red-accent-color);  
+    height: 20px;  
+    display: block;  
+    position: absolute;  
+    top: 35%;  
+    left: 90%;  
+    width: 300%;  
+    
+} */
 
 
 
