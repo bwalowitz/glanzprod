@@ -174,20 +174,17 @@ img {
 }
 
 section {
-    position: sticky;
-    top:0px;
+
 }
 
 .projects {
-    position: sticky;
-    top:50px;
-    height: 80vh;
+
 }
 .hero {
     
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    height: 90vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -228,6 +225,7 @@ section {
 } */
 
 .projects {
+   
     padding: 1em;
     height: max-content;
     max-width: 80vw;
@@ -240,7 +238,6 @@ section {
     /* display: flex; */
     justify-content: center;
     align-items: center;
-    height: auto;
 }
 
 
@@ -301,20 +298,90 @@ h2::after {
 }
 
 .more {
-    position: sticky;
-    top: 0;
-    height: 100vh;
-    max-width: 900px;
-    margin: 0px auto;
+    
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+.more-text {
+    flex: 2;
+    margin-right: 2em;
+}
+
+.more-text p {
+    margin-top: 0;
+    padding-bottom: 1em;
+}
+
+.more-text h3 {
+    display: inline;
+    padding-bottom: .5em;
+    margin: 0;
+    color: var(--red-accent-color);
+}
+
+
+
+.more-text {
+
+    padding-right: 2em;
+    border-right: solid var(--gold-accent-color) 1px;
+}
+
+@media(max-width:700px){
+    .more {
+    
+        display: block;
+      
+    }
+    
+    .more-text {
+        padding-right: 0;
+        border-right: none;
+    }
+    
+    }
+.more-links {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.more-links a:first-of-type {
+    display: block;
+    width: 80%;
+    border-bottom: solid var(--gold-accent-color) 1px;
+}
+
+
+.more-links a {
+   display: block;
+   padding: 3em;
+   align-self: center;
+   justify-self: center;
+   text-decoration: none;
+   text-align: center;
+   font-size: 1.1em;
+   color: var(--second-font-color);
 }
 
 .projects-heading {
-    color: var(--red-accent-color);
+    color: var(--gold-accent-color);
     text-align: center;
     margin-bottom: 2em;
     text-transform: uppercase;
     font-weight: 800;
 }
+
+
 
 
 
