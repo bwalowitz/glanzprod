@@ -176,7 +176,7 @@ img {
 .hero {
     background-color: var(--main-bg-color);
     color: var(--main-font-color);
-    height: 90vh;
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -205,8 +205,18 @@ img {
         rgba(0,0,0,1) 0%,rgba(255,255,255,0) 100%);
 }
 
+.gradient-two {
+    position: relative;
+    z-index: 1;
+    /* transform: translateY(-100px); */
+    height: 200px;
+    background-image:
+    linear-gradient(
+    rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%);
+}
+
 .projects {
-    height: 100vh;
+    /* height: 400px; */
     background-color: var(--second-bg-color);
     max-width: 80vw;
     margin: 0 auto;
@@ -214,8 +224,11 @@ img {
 }
 
 .projects-box {
+    
+    position: relative;
+    z-index: 5;
     padding-top: 2em;
-    transform: translateY(-300px);
+    /* transform: translateY(-300px); */
     background-color: var(--second-bg-color);
     background-image: url("https://www.transparenttextures.com/patterns/stardust.png");/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
     /* overflow: hidden; */
@@ -289,6 +302,10 @@ h2::after {
 
 }
 
+.more {
+    max-width: 900px;
+    margin: 0px auto;
+}
 
 
 
